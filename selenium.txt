@@ -1,0 +1,1221 @@
+Website GUI(Graphical User Interface) Testing
+
+Tasks: Day-8
+
+Part-1:
+Open notepad and copy paste below code into notepad
+Save notepad with extension as .html
+Double click on saved html file, it opens in browser and find xpath for below questions
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="container">
+      <h1>Main Title</h1>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>
+          Item 3
+          <span class="label">Label 3</span>
+        </li>
+      </ul>
+      <div class="content">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <span>Extra Info</span>
+      </div>
+    </div>
+  </body>
+</html>
+
+Questions:
+Select all <li> elements that are children of the <ul> element.
+Select the parent of the <span> element with class label.
+Select the next sibling of the <p> element containing Paragraph 1.
+Select the previous sibling of the <span> element containing Extra Info.
+Select the ancestor <div> of the <span> with text Label 3.
+Select all descendant <p> elements of the <div> with class content.
+
+Part-2:
+Open notepad and copy paste below code into notepad
+Save notepad with extension as .html
+Double click on saved html file, it opens in browser and find xpath for below questions
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XPath Practice</title>
+</head>
+<body>
+  <div id="main">
+    <h1 class="title">XPath Practice Page</h1>
+
+    <div class="section" id="section1">
+      <p class="description">Welcome to the XPath practice page.</p>
+      <a href="/home" class="link" id="home">Home</a>
+      <a href="/about" class="link" data-info="company">About</a>
+    </div>
+
+    <div class="section" id="section2">
+      <ul>
+        <li><span class="item" data-id="101">Item One</span></li>
+        <li><span class="item" data-id="102">Item Two</span></li>
+        <li><span class="item" data-id="103">Item Three</span></li>
+      </ul>
+    </div>
+
+    <div class="section" id="section3">
+      <table>
+        <tr><th>Name</th><th>Age</th></tr>
+        <tr><td>John</td><td>30</td></tr>
+        <tr><td>Jane</td><td>25</td></tr>
+        <tr><td>Mike</td><td>32</td></tr>
+      </table>
+    </div>
+
+    <div class="form-section">
+      <form>
+        <input type="text" name="username" placeholder="Enter Username" />
+        <input type="password" name="password" placeholder="Enter Password" />
+        <input type="submit" value="Login" />
+        <input type="reset" value="Clear" />
+      </form>
+    </div>
+
+    <div class="footer">
+      <p>Contact us at <a href="mailto:support@example.com">support@example.com</a></p>
+      <p>&copy; 2025 Example Inc.</p>
+    </div>
+  </div>
+</body>
+</html>
+
+Questions:
+Select the <h1> element with the class title.
+Select the anchor tag with id="home".
+Select all anchor tags with class link.
+Select the anchor whose data-info attribute is company.
+Select the second <li> element in the unordered list.
+Select the <span> with text "Item Three".
+Select the <td> that contains the text "Jane".
+Select the age of the person named "Mike".
+Select all rows in the table body except the header.
+Select the <input> field used for passwords.
+Select the <input> with type submit whose value is "Login".
+Select the <form> element that contains the username field.
+Select all <input> elements inside the form.
+Select the paragraph that contains the email address.
+Select the anchor tag that contains mailto: in its href.
+Select the last <li> item in the list.
+Select the first anchor tag under #section1.
+Select all <td> siblings that follow the one with "John".
+Select the ul inside #section2 using id.
+Select <p> inside the class footer that contains &copy;.
+Select the span that has an attribute data-id="102".
+Select the <span> element using the contains() function for data-id.
+Select all elements that have a data-id attribute.
+Select input fields with name attributes using starts-with().
+Select the value="Clear" input using ends-with(.
+Select elements using text()="Enter Username" (test on placeholder).
+Select all descendant elements of #main.
+Select all ancestor elements of the <span> with text "Item One".
+Select all elements that are following siblings of the td with text "Jane".
+Select all elements where the class contains the word "section".
+
+NOTE: Complete C# Day-2 concepts as well. Check C# notes for topics
+
+
+Tasks: Day-7
+		URL: https://www.hyrtutorials.com/p/alertsdemo.html
+
+Get all cookies in above webpage and print their values
+	Hint: getCookies()
+Delete all cookies available
+	Hint: deleteAllCookies()
+Delete cookie using its “Name” not by cookie object
+Hint: deleteCookieNamed(String name)
+
+Tasks: Day-6
+Today's class discussed keyDown(Keys key) and keyUp(Keys key). Explore below two methods and find out what is difference between below and discussed methods
+
+keyDown(WebElement, Keys key)
+keyUp(WebElement, Keys key)
+
+Move one field to another field using TAB key
+Refresh the browser using shortcut keys
+Cut the data from one field and paste into another field
+Try all Keys class constant once which are available in table
+
+Tasks: Day-5
+URL: https://www.instagram.com/
+First check if the login button is working or not.
+If working prints “login button enabled” else prints “login button disabled”. 
+If disabled enter random username and password and now check for enablement.
+Now enter wrong username and password and take screenshot
+Now enter correct username and password and take screenshot
+Take screenshot of “Login in with Facebook” only not entire screen
+
+ JUST TRY: Send a message in our “Testing Batch” whatsapp group with a message “sending message using selenium”
+
+For all below operations take a screenshot but do not write code every time. Write once reuse it
+URL: https://www.facebook.com/
+Highlight any one word in “Facebook helps you connect and share with the people in your life.”
+Click on “create new account” button using mouse
+Double click on “Forgot Password?” link.
+Open popup on “Login” button
+Scroll page till you see “Meta © 2025”
+
+URL: https://www.w3schools.com/Html/html5_draganddrop.asp
+Drag w3schools.com image into empty box
+
+Tasks: Day-4
+URL: https://www.hyrtutorials.com/p/frames-practice.html
+In the above url click on the french checkbox which is available in the second frame. 
+Then enter selenium in the main window textbox.
+Now click on the spanish checkbox which is available in the second frame of the third frame.
+Now select python in the first frame of the third frame and also print “Java” which is available in select.
+Then enter the course in the main window textbox.
+Now print the title and url of the current window or web page.
+Finally print the text in the textbox of the main window along with your name.
+
+Tasks: Day-3
+		URL: https://www.hyrtutorials.com/p/html-dropdown-elements-practice.html
+Print “sizes are matched” if both select option tags count are the same.
+If java selects in the first dropdown then Eclipse and NetBeans have to select in the second dropdown.If Python selects in the first dropdown then deselect Eclipse and NetBeans in the second dropdown.
+Based on the input “facebook”, “instagram”, “youtube” respective browsers have to open.
+Login into your instagram account.
+Play video in youtube https://youtu.be/zhCWKi3FJD8?si=mf8j40pwDHPp3YRK
+
+Tasks: Day-2
+URL: https://www.hyrtutorials.com/p/window-handles-practice.html
+1. In above link click on button 4 and switch to each window or tab and get respective urls and store in list. Finally print list size
+2. In the above link click on button 5 and switch to each window or tab and do actions like entering text in fields, clicking on button, radio button ,checkbox and also check if radio and checkbox selected or not if selected print “selected” otherwise prints “not selected”and clearing the text.Do these actions based on the elements available in child windows or tabs. Finally switch to the parent window again and print the title of parent window.
+
+Tasks: Day-1
+In class we launched only chrome browser you guys try to launch Firefox and Edge browsers
+Open flipkart and in the search bar type “iphone”.
+Open instagram and check whether the title is “Instagram” or not. If it is correct print “Matched” for 2 times otherwise “Not matched” for 5 times.
+Open facebook and check the url is matching with “www.facebook.com”, if matches print “link is same” and “link is not same”.
+URL: https://www.google.co.in/
+	In the above url, find out any <a> tag after finding out prints “a tag found” for 5 times.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Website contains web pages and web pages are developed using HTML, CSS and Javascript.
+
+
+
+HTML Tag Syntax: 
+<TagName attribute1=”value1” attribute2=”value2” attribute3=”value3”> content </TagName>
+
+Examples:
+<input type="text" id="username" name="user" placeholder="Enter Username">
+<p id="intro" class="text-primary" style="font-size: 18px;"> Apple </p>
+<div id="content" class="container" style="background-color: lightblue;"><h2>Welcome</h2></div>
+<a href="https://www.google.com" id="googleLink" class="external-link" target="_blank">Visit Google</a>
+
+
+Selenium WebDriver
+
+Selenium is Predefined Package for selenium web driver available for Java, C#, Python, Ruby, Javascript.
+It is used to perform Website GUI(Graphical User Interface) Testing.
+It contains predefined Classes, Interfaces, Variables, Methods, Enums.
+
+NOTE: We must use Selenium package, Java Packages and Custom code to perform GUI Testing.
+
+
+
+
+
+
+Driver Class
+Description
+Object Creation 
+ChromeDriver
+Controls Google Chrome.
+WebDriver driver = new ChromeDriver();
+FirefoxDriver
+Controls Mozilla Firefox.
+WebDriver driver = new FirefoxDriver();
+EdgeDriver
+Controls Microsoft Edge.
+WebDriver driver = new EdgeDriver();
+SafariDriver
+Controls Apple Safari.
+WebDriver driver = new SafariDriver();
+
+
+NOTE:
+Cross-Browser Testing: Cross-browser testing is the process of testing a web application to ensure that it works as expected across multiple browsers such as Chrome, Firefox, Safari, Edge, and Internet Explorer. 
+
+Cross-Device Testing: Cross-device testing is the process of  testing an application(In our case it is a website) on various devices, including desktops, smartphones, and tablets, to ensure that it is responsive and provides a consistent experience across different screen sizes, resolutions, and device specifications.
+
+NOTE: In interface all are abstract methods, but in class all are overridden methods. We use overridden methods of class.
+
+WebDriver: It is an Interface in selenium package
+
+Below are Methods available in WebDriver Interface:
+
+
+Return Type
+Method Name
+Description
+✅
+void
+get(String url)
+Open a URL in the browser.
+✅
+String
+getCurrentUrl()
+Returns the current URL.
+✅
+String
+getTitle()
+Returns the page title.
+✅
+String
+getPageSource()
+Returns the page's source code as a string.
+✅
+WebElement
+(Interface)
+findElement(By by)
+Finds the first matching element using the given locator.
+✅
+List<WebElement>
+(Generic Class)
+findElements(By by)
+Finds all matching elements using the given locator.
+✅
+String
+getWindowHandle()
+Returns the unique handle of the current window.
+✅
+Set<String>
+(Generic Class)
+getWindowHandles()
+Returns a set of all open window handles.
+✅
+TargetLocator (Interface)
+switchTo()
+Switches focus to a different window, frame, or alert.
+✅
+void
+close()
+Closes the current browser window.
+✅
+void
+quit()
+Quits the entire browser session.
+✅
+Navigation 
+(Interface)
+navigate()
+Provides methods to navigate to URL, back, forward, refresh.
+✅
+Options
+(Interface)
+manage()
+Provides access to browser options like timeouts, cookies, and window management.
+
+
+
+By: It is an Class in selenium package
+
+8 Locators: id, name, className, tagName, linkText, partialLinkText, cssSelector, xpath
+
+Below are Methods available in By Class: 
+
+
+Return Type
+Static Method Name
+Description
+✅
+By
+id(String id)
+Locates an element by its ID attribute.
+✅
+By
+name(String name)
+Locates an element by its name attribute.
+✅
+By
+className(String className)
+Locates elements by their class attribute value.
+✅
+By
+tagName(String tagName)
+Locates elements by their HTML tag name (like input, div, etc.).
+✅
+By
+linkText(String linkText)
+Locates a link (<a> anchor tag) by its exact text.
+✅
+By
+partialLinkText(String partialLinkText)
+Locates a link by partial text match.
+
+
+By
+cssSelector(String selector)
+Locates elements using a CSS Selector.
+
+
+By
+xpath(String xpathExpression)
+Locates elements using an XPath expression.
+
+
+
+
+
+WebElement: It is an Interface in selenium package
+
+NOTE: IN HTML: <form><button type=”submit”></form>
+
+Below are Methods available in WebElement Interface:
+
+
+Return Type
+Method Name
+Description
+✅
+void
+click()
+Clicks on the web element.
+✅
+void
+submit()
+Submits a form (useful when an element is inside a form).
+✅
+void
+sendKeys(CharSequence... keysToSend)
+Sends keyboard input to the element (typing into input boxes).
+✅
+void
+clear()
+Clears the content of a text input or textarea.
+✅
+String
+(Class)
+getTagName()
+Gets the tag name of the element (like input, div, p, etc.).
+✅
+String
+(Class)
+getDomAttribute(String name)
+Gets the value of a specified attribute (like href, id, class).
+✅
+boolean
+isSelected()
+Checks if an element (like checkbox/radio button) is selected.
+✅
+boolean
+isEnabled()
+Checks if an element is enabled (interactable).
+✅
+boolean
+isDisplayed()
+Checks if an element is visible on the page.
+✅
+Point
+(Class)
+getLocation()
+Returns the (x, y) location of the top-left corner of the element.
+✅
+Dimension
+(Class)
+getSize()
+Returns the width and height of the element.
+✅
+Rectangle
+(Class)
+getRect()
+Returns the element's position and size as a Rectangle.
+✅
+String
+(Class)
+getCssValue(String propertyName)
+Gets the value of a CSS property (like color, font-size).
+
+
+List<WebElement>
+(Generic Interface)
+findElements(By by)
+Finds multiple child elements inside the current element.
+
+
+WebElement
+(Interface)
+findElement(By by)
+Finds a single child element inside the current element.
+✅
+String
+(Class)
+getText()
+Retrieves the visible text inside the element.
+✅
+Screenshot
+(Interface)
+getScreenshotAs(OutputType target)
+Take a screenshot of the specific WebElement.
+
+
+
+TargetLocator: It is an Interface in selenium package
+
+Below are Methods available in TargetLocator Interface:
+
+
+Return Type
+Method
+Description
+✅
+Alert 
+(Interface)
+alert()
+Switches focus to an alert box.
+✅
+void
+frame(int index)
+Switches focus to a frame by index.
+✅
+void
+frame(String nameOrId)
+Switches focus to a frame by its name or ID.
+✅
+void
+frame(WebElement frameElement)
+Switches focus to a frame using a WebElement.
+✅
+void
+parentFrame()
+Switches focus to the parent frame.
+✅
+void
+defaultContent()
+Switches to the main window from any frame.
+✅
+void
+window(String windowHandle)
+Switches focus to a specific window by its handle.
+
+
+Alerts: 3 types
+Simple Alert - only “ok” button
+Confirmation Alert - ”ok” and “cancel” buttons
+Prompt Alert - “textbox”, “ok” and “cancel” buttons
+
+NOTE: 
+Multiple windows can open at a time(parallel) but only one alert opens at a time.
+How to find frame in web page:
+Way-1: Right click on webpage if frame exists then in popup it shows “view frame source”
+Way-2: click on inspect and check whether <iframe> tag is present or not
+
+Navigation: It is an Interface in selenium package
+
+Below are Methods available in Navigation Interface:
+
+
+Return Type
+Method Name
+Description
+✅
+void
+back()
+Navigates the browser to the previous page in the browser's history.
+✅
+void
+forward()
+Navigates the browser to the next page in the browser's history.
+✅
+void
+to(String url)
+Navigates the browser to a specified URL.
+✅
+void
+to(URL url)
+Navigates the browser to a specified URL represented by a URL object.
+✅
+void
+refresh()
+Refreshes the current page.
+
+
+
+
+Options: It is an Interface in selenium package
+
+Below are Methods available in Options Interface:
+
+
+Return Type
+Method Name
+Description
+
+
+Logs (Interface)
+logs()
+Gives access to logs such as browser logs, driver logs, etc.
+✅
+Timeouts
+(Interface)
+timeouts()
+Provides methods to manage different types of timeouts (implicit wait, page load timeout, script timeout).
+✅
+Window
+(Interface)
+window()
+Provides methods to manage the browser window (maximize, minimize, fullscreen, set size and position).
+✅
+Cookies
+(Interface)
+addCookie(Cookie cookie)
+Adds a specific cookie to the current browser session.
+✅
+void
+deleteCookieNamed(String name)
+Deletes a cookie by its name.
+✅
+void
+deleteCookie(Cookie cookie)
+Deletes a specific cookie by passing the cookie object.
+✅
+void
+deleteAllCookies()
+Deletes all cookies for the current domain.
+✅
+Cookie (Class)
+getCookieNamed(String name)
+Retrieves a specific cookie by its name.
+✅
+String
+getValue()
+Retrieves specific cookie value
+✅
+Set<Cookie>
+(Generic Class)
+getCookies()
+Retrieves all cookies visible to the current page.
+
+
+NOTE: Cookie is a selenium class
+Cookie: It is temporary data which stores in browser and it is respective to specific webpage
+
+Window: It is an Interface in selenium package
+
+Below are Methods available in Window Interface:
+
+
+Return Type
+Method Name
+Description
+✅
+void
+maximize()
+Maximizes the browser window.
+✅
+void
+minimize()
+Minimizes the browser window.
+✅
+void
+fullscreen()
+Makes the browser go fullscreen.
+✅
+void
+setSize(Dimension targetSize)
+Set the browser window to a specific size.
+✅
+void
+setPosition(Point targetPosition)
+Moves the browser window to a specific screen position.
+✅
+Dimension
+(class)
+getSize()
+Returns the current size of the window.
+✅
+Point
+(class)
+getPosition()
+Returns the current position of the window.
+
+
+NOTE: 
+After maximize() the url bar and tab bar is visible but after fullScreen() both are not visible only webpage is visible
+Size: sets size to window (width, Height) - pixels
+Position: sets position to window start (width,height) - pixels
+Dimension and Position are predefined classes
+
+
+Dimension: It is an class in selenium package
+
+Below are Methods available in Dimension class:
+
+
+Return Type
+Method
+Description
+✅
+int
+getWidth()
+Returns the width.
+✅
+int
+getHeight()
+Return the height.
+✅
+String
+toString()
+Returns a string representation like (800, 600).
+
+
+
+
+
+Point: It is an class in selenium package
+
+Below are Methods available in Point class:
+
+
+Return Type
+Method
+Description
+✅
+int
+getX()
+Returns the x-coordinate.
+✅
+int
+getY()
+Returns the y-coordinate.
+✅
+String
+toString()
+Returns a string representation like (100, 200).
+
+
+
+Select: It is an class in selenium package
+Two Types:
+Single 
+Multiple
+
+Select <variable_name> = new Select(WebElement element);
+
+NOTE: This class works only for <select> tag in html
+
+Below are Methods available in Select class:
+
+
+Return Type
+Method
+Description
+✅
+void
+selectByVisibleText(String text)
+Select option by the visible text.
+✅
+void
+selectByValue(String value)
+Select option by the value attribute.
+✅
+void
+selectByIndex(int index)
+Select option by index (starting from 0).
+✅
+void
+deselectByVisibleText(String text)
+Deselect option by visible text. (only for multi-select)
+✅
+void
+deselectByValue(String value)
+Deselect option by value.
+✅
+void
+deselectByIndex(int index)
+Deselect option by index.
+✅
+void
+deselectAll()
+Deselect all options (only for multi-select).
+✅
+WebElement
+getFirstSelectedOption()
+Returns the first selected option.
+✅
+List<WebElement>
+getAllSelectedOptions()
+Returns all selected options.
+✅
+List<WebElement>
+getOptions()
+Returns all options inside the select tag.
+✅
+boolean
+isMultiple()
+Returns true if the <select> supports multiple selections.
+
+
+Approaches to handle Dropdowns:
+
+
+
+
+Actions: It is an class in selenium package
+Used to perform Mouse actions
+Left Button
+Click
+Double click
+Right Button
+click
+Wheel
+moving
+Used to perform Keyboard actions
+
+Actions <variable_name>=new Actions(WebDriver driver);
+
+
+
+Return Type
+Method
+Description
+✅
+Actions
+click(WebElement target)
+Clicks on the specified element.
+✅
+Actions
+doubleClick(WebElement target)
+Double-clicks the specified element.
+✅
+Actions
+contextClick(WebElement target)
+Right-clicks the given element.
+✅
+Actions
+clickAndHold(WebElement target)
+Clicks and holds on the given element.
+✅
+Actions
+release(WebElement target)
+Releases the mouse on the given element.
+✅
+Actions
+dragAndDrop(WebElement src, WebElement dest)
+Drags source element and drops on destination.
+✅
+Actions
+moveToElement(WebElement target)
+Moves the mouse to the center of the element.
+✅
+Actions
+sendKeys(WebElement, CharSequence...)
+Sends keys to the specified element.
+✅
+Actions
+keyDown(Keys key)
+Presses a modifier key (e.g., Keys.CONTROL).
+✅
+Actions
+keyDown(WebElement, Keys key)
+Presses a key while focused on an element.
+✅
+Actions
+keyUp(Keys key)
+Releases a modifier key.
+✅
+Actions
+keyUp(WebElement, Keys key)
+Releases a key on a target element.
+✅
+Actions
+pause(Duration duration)
+Waits for the given duration.
+✅
+Action
+build()
+Builds the sequence of actions into a single composite action.
+✅
+void
+perform()
+Executes the actions that were built using the Actions class.
+
+
+Keys is class in selenium package
+
+Category
+Key Constant
+Description
+Modifier Keys
+Keys.CONTROL
+Control (Ctrl) key
+
+
+Keys.SHIFT
+Shift key
+
+
+Keys.ALT
+Alt key
+
+
+Keys.META
+Meta key (e.g., Windows key, ⌘ on Mac)
+
+
+Keys.COMMAND
+Command key (⌘ on macOS)
+Navigation Keys
+Keys.ARROW_UP / UP
+Arrow Up
+
+
+Keys.ARROW_DOWN / DOWN
+Arrow Down
+
+
+Keys.ARROW_LEFT / LEFT
+Arrow Left
+
+
+Keys.ARROW_RIGHT / RIGHT
+Arrow Right
+Control Keys
+Keys.ENTER
+Enter key
+
+
+Keys.RETURN
+Return (same as Enter)
+
+
+Keys.TAB
+Tab key
+
+
+Keys.ESCAPE
+Escape key
+
+
+Keys.BACK_SPACE
+Backspace
+
+
+Keys.DELETE
+Delete key
+
+
+Keys.SPACE
+Spacebar
+
+
+Keys.CLEAR
+Clear field input
+Function Keys
+Keys.F1 to Keys.F12
+F1–F12 keys
+Paging Keys
+Keys.HOME
+Go to start
+
+
+Keys.END
+Go to end
+
+
+Keys.PAGE_UP
+Page Up
+
+
+Keys.PAGE_DOWN
+Page Down
+Insert & Context
+Keys.INSERT
+Insert key
+
+
+Keys.CONTEXT_MENU
+Context menu (right-click key)
+
+
+
+Waits
+Implicitly Wait - Global Wait
+Explicit Wait - Element Based or General Wait
+Fluent Wait - Extension to Explicit (updated Explicit wait) - added extra features
+
+
+Timeouts: It is an Interface in selenium package
+
+Below are Methods available in Timeouts Interface:
+
+
+Return Type
+Method
+Description
+
+
+Timeouts
+implicitlyWait(Duration time)
+Sets the default wait time when locating elements.
+
+
+Timeouts
+pageLoadTimeout(Duration time)
+Sets the maximum time to wait for a page to load completely.
+
+
+Timeouts
+scriptTimeout(Duration time)
+Sets the maximum time to wait for asynchronous JavaScript execution (e.g., executeAsyncScript).
+
+
+Duration: It is an Class in JAVA package
+
+Below are Methods available in Duration Class:
+
+
+Return Type
+Method
+Description
+
+
+Duration
+ofSeconds(long seconds)
+Creates a Duration representing the given number of seconds.
+
+
+Duration
+ofMillis(long millis)
+Creates a Duration representing the given number of milliseconds.
+
+
+Duration
+ofMinutes(long minutes)
+Creates a Duration representing the given number of minutes.
+
+
+Duration
+ofHours(long hours)
+Creates a Duration representing the given number of hours.
+
+
+
+
+
+
+
+WebDriverWait: It is an Class in selenium package
+
+WebDriverWait <variable_name>= new WebDriverWait(driver, Duration);
+
+Below are Methods available in WebDriverWait Class:
+
+
+Return Type
+Method
+Description
+
+
+WebDriverWait
+WebDriverWait(WebDriver driver, Duration timeout)
+Constructor that creates a new WebDriverWait instance with a specified timeout.
+
+
+WebDriverWait
+withMessage(String message)
+Sets a custom message that will be displayed when the wait times out.
+
+
+WebDriverWait
+pollingEvery(Duration duration)
+Sets the frequency with which the condition is checked.
+
+
+WebDriverWait
+ignoring(Class<? extends Throwable> exception)
+Specifies which exceptions to ignore while waiting.
+
+
+T
+until(ExpectedCondition<T> condition)
+Waits until the specified condition is met and returns the result.
+
+
+ExpectedConditions: It is an Class in selenium package
+
+
+
+
+
+Return Type
+Static Methods
+Description
+
+
+WebElement
+visibilityOfElementLocated(By locator)
+Waits for an element to be visible in the DOM.
+
+
+Boolean
+elementToBeClickable(By locator)
+Waits for an element to be clickable (visible and enabled).
+
+
+Boolean
+presenceOfElementLocated(By locator)
+Waits for the element to be present in the DOM.
+
+
+Boolean
+alertIsPresent()
+Waits for an alert to be present in the DOM.
+
+
+WebElement
+visibilityOf(WebElement element)
+Waits for the given element to become visible.
+
+
+
+FluentWait: It is an Class in selenium package
+FluentWait<WebDriver> <variable_name> = new FluentWait<>(driver)
+
+
+Return Type
+Method
+Description
+
+
+FluentWait<T>
+withTimeout(Duration timeout)
+Specifies the maximum time to wait for the condition to be true.
+
+
+FluentWait<T>
+pollingEvery(Duration polling)
+Sets the interval between each condition check.
+
+
+FluentWait<T>
+ignoring(Class<? extends Throwable> exception)
+Specifies the exceptions to be ignored during the wait.
+
+
+T
+until(Function<WebDriver, T> condition)
+Waits for the condition to be met, and returns the result.
+
+
+FluentWait<T>
+withMessage(String message)
+Sets a custom message that will be displayed when the wait times out.
+
+
+Custom Functions for until()
+
+
+Difference between Implicitly wait, Explicit wait, Fluent wait
+Aspect
+Implicitly Wait
+Explicit Wait
+Fluent Wait
+Definition
+Sets a default wait time for all elements.
+Waits for a specific condition on a particular element.
+Advanced wait with customizable polling intervals and exception handling.
+Timeout Scope
+Global (applies to all elements).
+Specific to a given condition or element.
+Specific to a given condition or element.
+Polling Interval
+Default interval (not customizable).
+Default polling interval (can be customized but using Fluent Wait mechanism only).
+Fully customizable polling interval.
+Exception Handling
+No exception handling.
+Can handle exceptions through ExpectedConditions.
+Customizable exception handling (ignoring() method).
+Best For
+Simple waiting for elements to appear globally.
+Waiting for specific conditions like visibility or clickability.
+Advanced waiting with custom intervals and exception handling.
+
+
+XPath
+
+Absolute Xpath - full path from root element - starts with one(/) forward slash
+Relative Xpath - path starts from anywhere of DOM - starts with two(//) forward slash
+
+
+Node Selection:
+Nodename
+/ - starts from root node
+// - anywhere in DOM
+. - selects current node
+.. - selects parent node
+@ - selects attribute
+
+Predicate: [ ] used to find a specific node or a node that contains a specific value.
+
+Selecting Unknown Nodes:
+*
+@*
+
+Atomic value: no children or no parent
+
+Axes - ::
+self
+parent
+child
+ancestor
+descendant
+ancestor-or-self
+descendant-or-self
+following
+following-sibling
+preceding
+preceding-sibling
+
+
+
+
+Predefined Functions:
+Node Functions: name(), id(), position(), last()
+String Functions: starts-with(s1,s2), contains(s1,s2), substring(s,offset,length), string-length(s), normalize-space(s), concat(s1,s2…), text()
+Math Functions: ceiling(), floor(), round(), sum()
+
+Operators:
+Union Operator: |
+Arithmetic Operators: +    -     * div mod
+Logical Operators: and or not()
+Relational Operators: <     > <=   >=   !=  - 
+Assignment Operator: =
+
+Selecting Several Paths: | 
+//book/title | //book/price
+
+
+
+Will discuss below topics while doing projects:
+CSS Selector
+JavascriptExecutor
+Shadow DOM
+Techniques
+Mechanisms
